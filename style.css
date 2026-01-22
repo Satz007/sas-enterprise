@@ -434,6 +434,11 @@ section {
     transition: var(--transition);
 }
 
+.overlay h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
 .commercial-item:hover .overlay {
     transform: translateY(0);
 }
@@ -556,18 +561,98 @@ section {
 }
 
 .contact-info h3 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     color: var(--primary-red);
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.contact-info p {
-    margin-bottom: 15px;
+.contact-subtitle {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-item {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 20px;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: rgba(227, 30, 36, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: var(--transition);
+    border: 1px solid rgba(227, 30, 36, 0.2);
+}
+
+.contact-item:hover .icon-circle {
+    background: var(--primary-red);
+    transform: rotate(360deg);
+}
+
+.contact-item:hover .icon-circle i {
+    color: white;
+}
+
+.icon-circle i {
+    font-size: 20px;
+    color: var(--primary-red);
+    transition: var(--transition);
+}
+
+.contact-text h4 {
+    color: white;
     font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact-text p {
     color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-text .highlight {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.direction-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--primary-red);
+    font-weight: 600;
+    margin-top: 8px;
+    transition: var(--transition);
+}
+
+.direction-link i {
+    font-size: 0.9rem;
+}
+
+.direction-link:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .contact-form {
